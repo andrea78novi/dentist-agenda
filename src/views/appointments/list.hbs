@@ -1,0 +1,29 @@
+<h2>Appointments List</h2>
+
+<table class="list">
+   <thead>
+      <tr>
+         <th>Actions</th>
+         <th>Doctor</th>
+         <th>Patient Email</th>
+         <th>Date</th>
+      </tr>
+   </thead>
+   <tbody>
+      {{#each appointments}}
+      <tr>
+         <td class="actions-column">
+            <a href="/appointments/delete/{{_id}}" title="Delete appointment">Delete</a>
+         </td>
+         <td>{{doctorId.firstName}} {{doctorId.lastName}}</td>
+         <td>{{patientEmail}}</td>
+         <td>{{dateFrom}}</td>
+      </tr>
+      {{/each}}
+   </tbody>
+   <tfoot>
+      <tr>
+         <td class="list-footer" colspan="4">Number of appointments: {{appointments.length}}</td>
+      </tr>
+   </tfoot>
+</table>

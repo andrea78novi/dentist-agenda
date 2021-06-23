@@ -1,0 +1,36 @@
+<h2>Book an appointment</h2>
+
+<form class="form" action="/appointments/create" method="POST">
+
+   <label>Patient email *</label>
+   <input type="email" name="patientEmail" placeholder="Insert the email *" required autofocus>
+
+   <label>Select a Doctor *</label>
+   <select name="doctorId" required>
+      <option value="" disabled selected>Select a Doctor...</option>
+      {{#each doctors}}
+      <option value="{{_id}}">{{firstName}} {{lastName}}</option>
+      {{/each}}
+   </select>
+
+   <label>Select a date for the appointment *</label>
+   <input type="date" name="dateFrom" min="{{today}}" required>
+
+   <label>Select a time for the appointment *</label>
+   <select name="timeFrom" required>
+      <option value="" disabled selected>Select a time...</option>
+      <option value="10">10:00</option>
+      <option value="11">11:00</option>
+      <option value="12">12:00</option>
+      <option value="15">15:00</option>
+      <option value="16">16:00</option>
+      <option value="17">17:00</option>
+      <option value="18">18:00</option>
+   </select>
+
+   <div class="actions-bar">
+      <button type="reset">Reset</button>
+      <button type="submit">Save</button>
+   </div>
+
+</form>

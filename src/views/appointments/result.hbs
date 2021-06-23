@@ -1,0 +1,11 @@
+<h2>Book appointment result</h2>
+
+{{#if koMessage}}
+<p class="error-message">{{koMessage}}</p>
+{{/if}}
+
+{{#if okMessage}}
+<p class="success-message">{{okMessage}}</p>
+{{/if}}
+
+<a href="/appointments/list">Go to the appointment list</a>

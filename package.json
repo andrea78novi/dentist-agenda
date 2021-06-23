@@ -1,0 +1,36 @@
+{
+   "name": "dentist-agenda",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "ts-node src/index.ts",
+      "public": "ncp ./src/public/ ./dist/public/",
+      "hbscopy": "ncp ./src/views/ ./dist/views/",
+      "clean": "rimraf ./dist",
+      "build": "npm run clean && tsc && npm run hbscopy && npm run public",
+      "start": "node dist/index.js",
+      "startw": "npx nodemon"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "devDependencies": {
+      "@types/express": "^4.17.12",
+      "@types/express-handlebars": "^5.3.0",
+      "@types/mongoose": "^5.11.97",
+      "@types/morgan": "^1.9.2",
+      "nodemon": "^2.0.7",
+      "ts-node": "^10.0.0",
+      "typescript": "^4.3.4"
+   },
+   "dependencies": {
+      "express": "^4.17.1",
+      "express-handlebars": "^5.3.2",
+      "moment": "^2.29.1",
+      "mongoose": "^5.12.14",
+      "morgan": "^1.10.0",
+      "ncp": "^2.0.0",
+      "rimraf": "^3.0.2"
+   }
+}

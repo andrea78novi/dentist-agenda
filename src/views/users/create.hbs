@@ -1,0 +1,44 @@
+<h2>Create User</h2>
+
+{{#if message}}
+<p class="error-message">{{message}}</p>
+{{/if}}
+
+<form class="form" action="/users/create" method="POST">
+
+   <label>Insert email *</label>
+   <input type="email" name="email" placeholder="Email *" required autofocus>
+
+   <label>Select a type *</label>
+   <select name="type" required>
+      <option value="" disabled selected>Select a Type...</option>
+      <option value="Doctor">Doctor</option>
+      <option value="Patient">Patient</option>
+   </select>
+
+   <label>Insert first name *</label>
+   <input type="text" name="firstName" placeholder="First name *" required>
+
+   <label>Insert last name *</label>
+   <input type="text" name="lastName" placeholder="Last name *" required>
+
+   <label>Select a gender *</label>
+   <select name="gender" required>
+      <option value="" disabled selected>Select a Gender...</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+   </select>
+
+   <label>Insert address *</label>
+   <input type="text" name="address" placeholder="Address *" required>
+
+   <label>Insert phone</label>
+   <input type="tel" name="phone" placeholder="Phone">
+
+   <div class="actions-bar">
+      <button type="reset">Reset</button>
+      <button type="submit">Save</button>
+   </div>
+
+</form>

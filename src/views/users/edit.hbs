@@ -1,0 +1,44 @@
+<h2>Edit User</h2>
+
+<form class="form" action="/users/edit/{{user._id}}" method="POST">
+
+   <label>Email *</label>
+   <input type="email" name="email" placeholder="Email *" value="{{user.email}}" required disabled>
+
+   <label>Select a type *</label>
+   <select name="type" required autofocus>
+      {{#select user.type}}
+      <option value="" disabled>Select a Type...</option>
+      <option value="Doctor">Doctor</option>
+      <option value="Patient">Patient</option>
+      {{/select}}
+   </select>
+
+   <label>Edit first name *</label>
+   <input type="text" name="firstName" placeholder="First name *" value="{{user.firstName}}" required>
+
+   <label>Edit last name *</label>
+   <input type="text" name="lastName" placeholder="Last name *" value="{{user.lastName}}" required>
+
+   <label>Select a gender *</label>
+   <select name="gender" required>
+      {{#select user.gender}}
+      <option value="" disabled>Select a Gender...</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+      {{/select}}
+   </select>
+
+   <label>Edit address *</label>
+   <input type="text" name="address" placeholder="Address *" value="{{user.address}}" required>
+
+   <label>Edit phone</label>
+   <input type="tel" name="phone" placeholder="Phone" value="{{user.phone}}">
+
+   <div class="actions-bar">
+      <div></div>
+      <button type="submit">Save</button>
+   </div>
+
+</form>

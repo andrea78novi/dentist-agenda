@@ -1,0 +1,83 @@
+[
+   {
+      "email": "email1@gmail.com",
+      "type": "Doctor",
+      "firstName": "FirstName1",
+      "lastName": "LastName1",
+      "gender": "Male",
+      "address": "Address1",
+      "phone": "111111111"
+   },
+   {
+      "email": "email2@gmail.com",
+      "type": "Doctor",
+      "firstName": "FirstName2",
+      "lastName": "LastName2",
+      "gender": "Female",
+      "address": "Address2",
+      "phone": "222222222"
+   },
+   {
+      "email": "email3@gmail.com",
+      "type": "Doctor",
+      "firstName": "FirstName3",
+      "lastName": "LastName3",
+      "gender": "Other",
+      "address": "Address3",
+      "phone": "333333333"
+   },
+   {
+      "email": "email4@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName4",
+      "lastName": "LastName4",
+      "gender": "Male",
+      "address": "Address4",
+      "phone": "444444444"
+   },
+   {
+      "email": "email5@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName5",
+      "lastName": "LastName5",
+      "gender": "Female",
+      "address": "Address5",
+      "phone": "555555555"
+   },
+   {
+      "email": "email6@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName6",
+      "lastName": "LastName6",
+      "gender": "Other",
+      "address": "Address6",
+      "phone": "666666666"
+   },
+   {
+      "email": "email7@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName7",
+      "lastName": "LastName7",
+      "gender": "Male",
+      "address": "Address7",
+      "phone": "777777777"
+   },
+   {
+      "email": "email8@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName8",
+      "lastName": "LastName8",
+      "gender": "Female",
+      "address": "Address8",
+      "phone": "888888888"
+   },
+   {
+      "email": "email9@gmail.com",
+      "type": "Patient",
+      "firstName": "FirstName9",
+      "lastName": "LastName9",
+      "gender": "Other",
+      "address": "Address9",
+      "phone": "999999999"
+   }
+]

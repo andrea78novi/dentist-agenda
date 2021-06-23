@@ -1,0 +1,136 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #fff6e8;
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+button {
+   border: 0;
+   border-radius: 5px;
+   color: #fff;
+   height: 35px;
+   width: 110px;
+}
+
+button:hover {
+   box-shadow: 0px 0px 10px 0px rgba(170, 170, 170, 1);
+   cursor: pointer;
+}
+
+button:active {
+   filter: brightness(85%);
+}
+
+button[type="reset"] {
+   background-color: #007bff;
+}
+
+button[type="submit"] {
+   background-color: #28a745;
+}
+
+.navbar {
+   align-items: center;
+   background-color: #889eb8;
+   display: flex;
+   padding: 20px 20px 30px 20px;
+}
+
+.navbar-brand {
+   color: #fff6e8;
+   font-size: 30px;
+}
+
+.navbar-nav {
+   flex-grow: 10;
+   text-align: right;
+}
+
+.nav-link {
+   color: #fff6e8;
+   font-size: 20px;
+   margin: 0 20px 0 0;
+}
+
+.container {
+   padding: 20px;
+   text-align: -webkit-center;
+}
+
+.actions-bar {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 300px;
+}
+
+.form input, .form select {
+   height: 30px;
+   width: 300px;
+   margin: 3px 0 15px 0;
+}
+
+.form label {
+   font-size: 14px;
+   text-align: left;
+}
+
+.list {
+   width: 100%;
+   border: 1px solid #ddd;
+   border-collapse: collapse;
+}
+
+.list thead {
+   background-color: #b3d4a9;
+}
+
+.list th, .list td {
+   border: 1px solid #ddd;
+   padding: 10px;
+}
+
+.list-footer {
+   background: #ebd1bc;
+   text-align: right;
+   font-weight: bold;
+}
+
+.actions-column {
+   display: flex;
+   justify-content: space-around;
+}
+
+.error-message {
+   color: #f00;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+.success-message {
+   color: #28a745;
+   font-size: 18px;
+   font-weight: bold;
+}
