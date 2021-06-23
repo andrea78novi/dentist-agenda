@@ -9,7 +9,7 @@
       "hbscopy": "ncp ./src/views/ ./dist/views/",
       "clean": "rimraf ./dist",
       "build": "npm run clean && tsc && npm run hbscopy && npm run public",
-      "start": "node dist/index.js",
+      "start": "npm run build && node dist/index.js",
       "startw": "npx nodemon"
    },
    "keywords": [],
